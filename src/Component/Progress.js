@@ -3,7 +3,7 @@ import { useQuiz } from "../contexts/QuizContext";
 
 function Progress() {
   const { index, numQuestions, points, maxpossiblePoints, answer } = useQuiz();
-  console.log(index, numQuestions, points, maxpossiblePoints, answer);
+
   return (
     <header className="progress">
       <progress

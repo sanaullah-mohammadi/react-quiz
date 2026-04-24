@@ -1,6 +1,5 @@
 import React from "react";
 import { useQuiz } from "../contexts/QuizContext";
-
 function NextButton() {
   const { dispatch, answer, index, numQuestions } = useQuiz();
 

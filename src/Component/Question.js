@@ -1,6 +1,5 @@
 import Options from "./Options";
 import { useQuiz } from "../contexts/QuizContext";
-
 function Question() {
   const { questions, index } = useQuiz();
   const question = questions[index];
@@ -11,5 +10,4 @@ function Question() {
     </div>
   );
 }
-
 export default Question;

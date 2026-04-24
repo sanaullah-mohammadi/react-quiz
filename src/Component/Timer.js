@@ -11,7 +11,6 @@ function Timer() {
     },
     [dispatch]
   );
-
   const min = Math.floor(secondTimeRemaning / 60);
   const sec = secondTimeRemaning % 60;
   return (

@@ -28,7 +28,6 @@ export default function App() {
           <>
             <Progress />
             <Question />
-
             <Footer>
               <Timer />
               <NextButton />

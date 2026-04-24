@@ -2,8 +2,7 @@ import { useReducer } from "react";
 import "./styles.css";
 
 /*
-INSTRUCTIONS / CONSIDERATIONS:
-
+INSTRUCTIONS / CONSIDERATIONS:   
 1. Let's implement a simple bank account! It's similar to the example that I used as an analogy to explain how useReducer works, but it's simplified (we're not using account numbers here)
 
 2. Use a reducer to model the following state transitions: openAccount, deposit, withdraw, requestLoan, payLoan, closeAccount. Use the `initialState` below to get started.

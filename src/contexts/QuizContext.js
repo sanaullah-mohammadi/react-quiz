@@ -1,4 +1,4 @@
-import { createContext, useEffect, useMemo, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
 import { useContext } from "react";
 const SEC_PER_QUESTION = 30;
 const QuizContext = createContext();
@@ -57,12 +57,12 @@ function reducer(state, action) {
         secondTimeRemaning: state.secondTimeRemaning - 1,
         status: state.secondTimeRemaning === 0 ? "finished" : state.status,
       };
-
     // that is also great
     // return {
     //   ...state,status:"ready",index:0,answer:null,points:0,highscore:0
 
     // }
+
     default:
       throw new Error("Action unknown");
   }
@@ -83,7 +83,6 @@ function QuizeProvider({ children }) {
 
   const numQuestions = questions.length;
   const maxpossiblePoints = questions.reduce((pre, cur) => pre + cur.points, 0);
-
   return (
     <QuizContext.Provider
       value={{
@@ -103,7 +102,6 @@ function QuizeProvider({ children }) {
     </QuizContext.Provider>
   );
 }
-
 function useQuiz() {
   const context = useContext(QuizContext);
   if (context === undefined) {

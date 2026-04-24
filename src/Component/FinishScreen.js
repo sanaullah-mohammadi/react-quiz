@@ -25,5 +25,4 @@ function FinishScreen() {
     </>
   );
 }
-
 export default FinishScreen;
